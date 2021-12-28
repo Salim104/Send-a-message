@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        body{
+            background-color: rgb(111, 36, 146);
+            min-height: 650px;
+        }
+        .wrapper{
+            height: 630px;
+            width:100% ;
+            /* position: relative; */
+        }
+        h1{
+            margin: 15px;
+        }
+        .container{
+           height: 330px;
+           width: 450px;
+           background-color: whitesmoke;
+           border-radius: 12px;
+           position: relative;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           text-align: center;
+        }
+        .heading{
+            font-size: 23px;
+            padding-top: 20px;
+        }
+        .inputs{
+            display: flex;
+           flex-direction: column;
+        }
+        input{
+            margin: 20px;
+            height: 39px;
+        }
+        button{
+            margin: 10px 120px;
+            height: 40px;
+            border-radius: 14px;
+            background-color: rgb(111, 111, 240);
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: cornsilk;
+        }
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+            background-color: rgb(248, 120, 97);
+            margin: 0 20px;
+        }
+        .last{
+            font-size: 23px;
+        }
+        .message{
+            color: rgb(112, 206, 112);
+        }
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+        <h1 class="heading">A message you would like to pass</h1>
+        <div class="inputs">
+            <input class="input"type="text">
+        <button class="btn"><a href="#">Submit</a></button>
+        </div>
+        <h2 class="hide">Please enter a value to pass</h2>
+        <h1 class="last">Last Message Delivered!!!</h1>
+        <h2 class="message">Hello World</h2>
+    </div>
+  </div>
+    <script src="./basic.js"></script>
+</body>
+</html>
